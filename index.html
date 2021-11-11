@@ -1,0 +1,331 @@
+<html>
+  <head>
+	  <script src="image-slider.js" type="text/javascript"></script>
+	  <meta charset="utf-8">
+		<style>  //for intro loader
+			/* Center the loader */
+			#loader {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				z-index: 1;
+				width: 150px;
+				height: 150px;
+				margin: -75px 0 0 -75px;
+				border: 16px solid #f3f3f3;
+				border-radius: 50%;
+				border-top: 16px solid #3498db;
+				width: 120px;
+				height: 120px;
+				-webkit-animation: spin 2s linear infinite;
+				animation: spin 2s linear infinite;
+			}
+
+			@-webkit-keyframes spin {
+				0% { -webkit-transform: rotate(0deg); }
+				100% { -webkit-transform: rotate(360deg); }
+			}
+
+			@keyframes spin {
+				0% { transform: rotate(0deg); }
+				100% { transform: rotate(360deg); }
+			}
+
+			/* Add animation to "page content" */
+				.animate-bottom {
+				position: relative;
+				-webkit-animation-name: animatebottom;
+				-webkit-animation-duration: 1s;
+				animation-name: animatebottom;
+				animation-duration: 1s
+			}
+
+			@-webkit-keyframes animatebottom {
+				from { bottom:-100px; opacity:0 } 
+				to { bottom:0px; opacity:1 }
+			}
+
+			@keyframes animatebottom { 
+				from{ bottom:-100px; opacity:0 } 
+				to{ bottom:0; opacity:1 }
+			}
+
+			#myDiv() {
+				display: LOADING;
+				text-size: 30;
+				color: red;
+				text-align: center;
+				}
+		</style>
+	   <link rel="shortcut icon" value="image/x-icon" href="logo.png">
+	   <title>Aditya Creations</title>
+	   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	   <meta name="viewport" content="width= device-width, initial-scale= 0">
+	    <style>
+			.vertical-menu ul {
+				list-style: none;
+				align: center;
+			}
+			.vertical-menu a {
+				color: #225000;
+				display: block;
+				text-align: left;
+				text-shadow: 0 1px 0 #000;
+				padding: 0px 0 0;
+				font: 14px Helvetica;
+				text-decoration: none;
+				list-style: none;
+			}
+			.vertical-menu a.active {
+				backgroung-color: #4CAF50;
+				color: yellow;
+			}
+			.text1 {
+				color: black;
+				size: 2;
+			}
+		</style>
+		<script>
+			alert("Welcome To Aditya Creations by Aditya Sharma")
+			alert("Using website's script for other porposes is strictly prohibited until direct permission is given by the creater, anyone found copying or stealing any information from this website will be punished")
+		</script>
+		<style>
+			.para {
+				color: #BB5500;
+				text-decoration: 50;
+				padding: 40px;
+				text-align: justify;
+				font-size: 19;
+			}
+			.para1 {
+				color: #BB5500;
+				text-decoration: 50;
+				text-align: center;
+				font-size: 14;
+			}
+		</style>
+		<script type="text/javascript">
+			window.oncontextmenu = function () {
+				return false;
+			}
+			$(document).keydown(function (event) {
+				if (event.keyCode == 123) {
+				return false;
+			}
+			else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
+				return false;
+			}
+			});
+		</script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<style> //for ribbon
+			/* Main */
+			#menu {
+				width: 100%;
+				margin: 0;
+				top: -8px;
+				padding: 28px 0 0 0;
+				list-style: none; 
+				background: green;
+				border-radius: 10px;
+			}
+			#menu li {
+				float: left;
+				color: #CC6600;
+				padding: 30px;
+				font: bold 16px Helvetica;
+				text-decoration: none;
+				height: 50px;
+				text-shadow: 0 1px 0 #000;
+				position: relative; 
+			}
+			#menu a {
+				float: left;
+				height: auto;
+				padding: 25px;
+				color: #CC6600;
+				font: bold 12px/25px Arial, Helvetica;
+				text-decoration: none;
+				text-shadow: 0 1px 0 #000;
+			}
+			#menu li:hover > a {
+				color: #CC3333;
+			}
+			#menu ul {
+				list-style: none;
+				margin: 0;
+				color: #CC66500;
+				border-radius: 5px;
+				padding: 30;   
+				display: none;
+				position: absolute;
+				top: 35px;
+				left: 0;
+				background: #222;
+			}
+			#menu li:hover > ul {
+				display: block;
+				color: #CC66000;
+			}
+			#menu ul li{
+				float: none;
+				margin: 0;
+				padding: 30;
+				display: block;
+			}
+			#menu ul a{   
+				padding: 10px;
+				height: auto;
+				line-height: 1;
+				display: block;
+				white-space: nowrap;
+				float: none;
+				text-transform: none;
+			}
+			#menu:after{
+				visibility: hidden;
+				display: block;
+				font-size: 0;
+				content: ” “;
+				clear: both;
+				height: 0;
+			}
+			#menu ul li:first-child a:after{
+				content: " ";
+				position: absolute;
+				left: 30px;
+				top: -8px;
+				width: 0;
+				height: 0;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				border-bottom: 8px solid #FF0000;
+			}
+
+	    </style>
+		<script>
+			document.onkeydown = function(e) {
+				if (e.ctrlKey && 
+				(e.keyCode === 67 || 
+				e.keyCode === 86 || 
+				e.keyCode === 85 || 
+				e.keyCode === 117)) {
+				alert('Its not allowed, be creative, and do not try to do it again');
+				return false;
+				}
+			 else {
+				return true;
+				}
+			};
+		</script>
+		<script language="javascript">
+			document.onmousedown = disableclick;
+			status = "Right Click Disabled";
+			Function disableclick(e)
+			{
+			 if(event.button == 2)
+				{
+				  alert(status);
+				  return false; 
+				}
+			}
+		</script> 
+    </head>
+<body onload="myFunction()" oncontextmenu="return false" style="margin: 0; topmargin: 0; leftmargin: 0"> 
+<div id="loader"></div> 
+
+	<div style="display:none;" id="myDiv" class="animate-bottom"> 
+	<table border="0" style="height:100%; width:100%; top: 0; bottom: 0; left: 0; right: 0;"> 
+	 <tr height="25%">
+	  <th colspan="4" align="left" valign="top" bgcolor="green" height="150px">
+	   <table>
+        <tr>
+		 <td rowspan="2" valign="middle" height="70">
+          <img src="AC.png">
+		 </td>
+		 
+		 <td valign="middle">
+          <ul type="none" id="menu">
+           <li class="active">HOME
+			<ul><li>
+			 <a href="nstart.html" title="Home Page">HOME</a>
+			</li></ul>
+		   </li>
+           <li>About
+			<ul><li>
+			 <a href="aboutme.html" title="Click here to know more about us">About Us</a>
+			</li></ul>
+		   </li>
+           <li>Contact Us
+			<ul><li>
+			 <a href="contactus.html" title="Find ways to contact us here">Contact US</a>
+			</li></ul>
+		   </li>
+           <li>Login
+			<ul><li>
+			 <a href="protector.php" title="Login as Admin">Login</a>
+			</li></ul>
+		   </li>
+           <li>Share
+			<ul><li>
+			 <a href="share.html" title="share this page">Share</a>
+			</li></ul>
+		   </li>
+          </ul>
+	     </td>
+		 </tr>
+	   </table>
+	   <div class="clr"></div>
+		 </th>
+	</tr>
+	<tr height="50%">
+	<th valign="top" width="27.5%" height="210" align="center" topmargin="90"><p id="text1" valign="middle">Useful links</p><br><br><ul type="none">
+	<div class="vertical-menu">
+	<li><a href="#">Login</a></li>
+	<li><a href="#">Online Game</a></li>
+	<li><a href="https://cisce.org">ICSE Home</a></li>
+	<li><a href="https://www.cbse.gov.in">CBSE Home</a></li>
+	<li><a href="#">Link3</a></li>
+	<li><a href="#">Link4</a></li>
+	</div>
+	</th>
+	<th rowspan="3" valign="middle">
+	<table border="0" width="100%" height="100%"><tr valign="top" height="75%" topmargin="4"><td>
+		<p class="para">Aditya Creations' Website is an integral part of Aditya Creations hosted by Aditya Sharma. This piece is currently under development
+		and will recieve many updates until the design is finished. This website was initiated on 13 December, 2019 and was first hosted on internet on 11 November, 2021
+		This website is not under continuous maintenance so the visitors may expeience some troble while operating this website.
+		Aditya Sharma, the owner of this creations has self designed and programmed this website with all his skills. Aditya Sharma is a school student, with
+		exceptional knowledge in computing and programming since a small age. Born on 28 January 2006, his main indoor hobbies are programming & playing guitar.<br>
+		</p></td></tr><tr valign="bottom" height="75%" topmargin="25%"><td><p class="para1"><i>DISCLAMER:</i>The owner is not responsible for any sort of damange caused by this creation.
+		<br><i> Copyright:</i> No one is authorised to use/copy any content of this creation, copying is prohibited.</p></td></tr></table>
+	</th>
+	<th valign="middle" align="center"><table border="1">
+	<tr><td><h3><center>Admin Login</center></h3></td></tr>
+	<tr align="right"><td><lable for="userId">User Id: </lable><input type="text"></td></tr><br>
+	<tr align="right"><td><lable for="passWord">Password: </lable><input type="text"></td></tr><br>
+	<tr align="center"><td><input type="button" value="Reset"><input type="button" value="Submit" action="#"></td></tr>
+	</table>
+	</th>
+	</tr>
+	<tr height="25%">
+	<td valign="bottom" align="left">
+	<img src="logo1.png" height="200" width="200">
+	</td>
+	<td valign="bottom" align="right" height="" width="27.5%">~Aditya Sharma<br>Creater & Owner</td>
+	</tr>
+	</table>
+	</div>
+
+	 <script>
+		 var myVar;
+		 function myFunction() {
+		   myVar = setTimeout(showPage, 1500);
+		 }
+
+		 function showPage() {
+		 document.getElementById("loader").style.display = "none";
+		 document.getElementById("myDiv").style.display = "block";
+		 }
+	 </script>
+</body>
+</html>
